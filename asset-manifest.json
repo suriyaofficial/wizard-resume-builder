@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/wizard-resume-builder/static/css/main.d0d78be4.css",
-    "main.js": "/wizard-resume-builder/static/js/main.aec0278c.js",
+    "main.css": "/wizard-resume-builder/static/css/main.6f229d65.css",
+    "main.js": "/wizard-resume-builder/static/js/main.b22e60ae.js",
     "static/media/Hand coding.gif": "/wizard-resume-builder/static/media/Hand coding.f8e9273385e11e3ec5ec.gif",
+    "static/media/navlogo.jpg": "/wizard-resume-builder/static/media/navlogo.da20aaf49711843bba7a.jpg",
+    "static/media/logo.jpg": "/wizard-resume-builder/static/media/logo.bc8e0ca239695e2602c8.jpg",
     "index.html": "/wizard-resume-builder/index.html",
-    "main.d0d78be4.css.map": "/wizard-resume-builder/static/css/main.d0d78be4.css.map",
-    "main.aec0278c.js.map": "/wizard-resume-builder/static/js/main.aec0278c.js.map"
+    "main.6f229d65.css.map": "/wizard-resume-builder/static/css/main.6f229d65.css.map",
+    "main.b22e60ae.js.map": "/wizard-resume-builder/static/js/main.b22e60ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0d78be4.css",
-    "static/js/main.aec0278c.js"
+    "static/css/main.6f229d65.css",
+    "static/js/main.b22e60ae.js"
   ]
 }
