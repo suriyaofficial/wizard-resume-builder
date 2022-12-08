@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/wizard-resume-builder/static/css/main.ba7dd30f.css",
-    "main.js": "/wizard-resume-builder/static/js/main.d72cdd5a.js",
+    "main.css": "/wizard-resume-builder/static/css/main.e1f8e26f.css",
+    "main.js": "/wizard-resume-builder/static/js/main.972953c5.js",
     "static/media/Hand coding.gif": "/wizard-resume-builder/static/media/Hand coding.f8e9273385e11e3ec5ec.gif",
     "static/media/Navlogo.jpg": "/wizard-resume-builder/static/media/Navlogo.427c447ab3ece43c96e4.jpg",
     "static/media/navlogo.jpg": "/wizard-resume-builder/static/media/navlogo.da20aaf49711843bba7a.jpg",
     "static/media/logo.jpg": "/wizard-resume-builder/static/media/logo.bc8e0ca239695e2602c8.jpg",
     "index.html": "/wizard-resume-builder/index.html",
-    "main.ba7dd30f.css.map": "/wizard-resume-builder/static/css/main.ba7dd30f.css.map",
-    "main.d72cdd5a.js.map": "/wizard-resume-builder/static/js/main.d72cdd5a.js.map"
+    "main.e1f8e26f.css.map": "/wizard-resume-builder/static/css/main.e1f8e26f.css.map",
+    "main.972953c5.js.map": "/wizard-resume-builder/static/js/main.972953c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba7dd30f.css",
-    "static/js/main.d72cdd5a.js"
+    "static/css/main.e1f8e26f.css",
+    "static/js/main.972953c5.js"
   ]
 }
