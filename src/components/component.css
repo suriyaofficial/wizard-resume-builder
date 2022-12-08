@@ -13,6 +13,8 @@
 }
 .img{
      height: 50px;
+     
+     
         
      
 }
@@ -28,9 +30,8 @@
     
     
 }
-.Nav-link{
+.NavLink{
     text-decoration: none;
-    padding: 2px;
-   
-    box-shadow: 0 0 5px 1px #555;
+    color: #fff;
 }
+

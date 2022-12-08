@@ -1,5 +1,5 @@
 import React from 'react'
-import TempleteLayout from './Templete/TempleteLayout'
+import TempleteLayout from '../Templete/TempleteLayout'
 
 function Home() {
   return (
