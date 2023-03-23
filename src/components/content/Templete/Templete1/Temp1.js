@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -13,6 +14,8 @@ import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
+import{Link} from 'react-router-dom'
+import { useSelector,useDispatch } from "react-redux";
 import { yupResolver } from "@hookform/resolvers/yup";
 const schema = yup.object().shape({
   firstName: yup.string().required(),
@@ -74,6 +77,11 @@ function a11yProps(index) {
 
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
+  const [preview,setPreview]=React.useState()
+  const dispatch = useDispatch();
+  let navigate = useNavigate();
+  const Temp1 = useSelector((state) => state.Templete1data);
+  
   const {
     register,
     handleSubmit,
@@ -83,7 +91,7 @@ export default function VerticalTabs() {
     resolver: yupResolver(schema),
   });
   console.log(errors);
-
+  
   const onSubmit = data => console.log(data);
   const next = (event, newValue) => {
     setValue(value + 1);
@@ -95,11 +103,20 @@ export default function VerticalTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
+  if (preview === true) {
+    return navigate("/temp1Pv");
+  } else {
+    
+  }
   return (
     <>
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        onSubmit={handleSubmit((data)=>{
+          dispatch({ type: "Templete1data", payload: data })
+          console.log(data)
+          setPreview(true)
+
+        })}
       >
         <Grid container spacing={0}>
           <Grid item xs={4} md={2}>
@@ -387,13 +404,17 @@ export default function VerticalTabs() {
                     <Button variant="outlined" onClick={next}>back</Button>
                     {/* <Button type="submit" id="submit"
                     label="submit" variant="contained" onClick={handleSubmit}>submit</Button> */}
+                   {/* <Link to="temp1Pv"> */}
                     <input type="submit" disabled={!isValid} />
+                    {/* </Link> */}
                   </Stack>
                 </Grid>
               </Grid>
             </TabPanel>
           </Grid>
         </Grid>
+        
+        
       </form>
     </>
   );
