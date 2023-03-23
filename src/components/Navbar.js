@@ -4,6 +4,7 @@ import {Link}from 'react-router-dom'
 import './component.css'
 import Drawer from './content/Drawer/DrawerComp'
 import logo from '../assets/navlogo.jpg'
+import Grid from '@mui/material/Grid';
 const Navbar = () => {
   
   const[value,setValue]=useState();
@@ -12,7 +13,9 @@ const Navbar = () => {
   
   return (
         <>
-          <AppBar position="float"  sx={{background:"#ffffff"}}>
+        <Grid container spacing={0}>
+        <Grid item xs={12} >
+        <AppBar position="float"  sx={{background:"#ffffff"}}>
             <Toolbar>
             
               {
@@ -44,7 +47,10 @@ const Navbar = () => {
               </Toolbar>
               
           </AppBar>
-          
+
+        </Grid>
+        </Grid>
+                    
           
           
         </>
