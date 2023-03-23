@@ -9,7 +9,7 @@ import Temp1 from "./components/content/Templete/Templete1/Temp1";
 import Temp2 from "./components/content/Templete/Templete2/Temp2";
 import Temp3 from "./components/content/Templete/Templete3/Temp3";
 import Temp4 from "./components/content/Templete/Templete4/Temp4";
-import ResumePrev from "./components/content/Templete/Templete1/Resumeprev";
+import Temp1Pv from "./components/content/Templete/Templete1/Temp1Pv";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           <Route path="home/temp2" element={<Temp2 />} />
           <Route path="home/temp3" element={<Temp3 />} />
           <Route path="home/temp4" element={<Temp4 />} />
-          <Route path="/temp1Pv" element={<ResumePrev />} />
+          <Route path="/temp1Pv" element={<Temp1Pv />} />
         </Routes>
       </Router>
     </>
